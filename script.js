@@ -7,11 +7,9 @@
         initKeyboardNavigation();
         initReducedMotionCheck();
         initExternalLinks();
+        initPageReveal();
     }
 
-    /**
-     * Enhanced keyboard navigation
-     */
     function initKeyboardNavigation() {
         // Track if user is using keyboard
         let isKeyboardUser = false;
@@ -36,10 +34,6 @@
         });
     }
 
-    /**
-     * Check for reduced motion preference
-     * and apply appropriate class
-     */
     function initReducedMotionCheck() {
         const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -58,26 +52,26 @@
         mediaQuery.addEventListener('change', handleMotionPreference);
     }
 
-    /**
-     * Handle external links
-     * Adds security attributes and optional visual indicator
-     */
     function initExternalLinks() {
         const externalLinks = document.querySelectorAll('a[target="_blank"]');
 
         externalLinks.forEach(function (link) {
-            // Ensure security attributes are set
             if (!link.hasAttribute('rel')) {
                 link.setAttribute('rel', 'noopener noreferrer');
             }
 
-            // Add screen reader text if not present
             if (!link.querySelector('.sr-only')) {
                 const srText = document.createElement('span');
                 srText.className = 'sr-only';
                 srText.textContent = ' (opens in new tab)';
                 link.appendChild(srText);
             }
+        });
+    }
+
+    function initPageReveal() {
+        window.requestAnimationFrame(function () {
+            document.body.classList.add('is-ready');
         });
     }
 
