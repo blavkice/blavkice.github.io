@@ -1,183 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="blavkice - Software developer. Portfolio with projects in Python, C++, Java, and TypeScript with Angular and NestJS.">
-    <meta name="theme-color" content="#0f1214">
     <title>blavkice portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <!-- SR only utility (inline for immediate availability) -->
-    <style>
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-    </style>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <div class="page">
-        <header class="hero hero--single">
+        <header class="hero">
             <div class="hero__content">
-                <!-- <p class="eyebrow reveal" style="--delay: 0ms">student</p> -->
-                <h1 class="hero__title reveal" style="--delay: 80ms">blavkice</h1>
-                <p class="hero__subtitle reveal" style="--delay: 140ms"></p>
-                <div class="hero__actions reveal" style="--delay: 200ms">
-                    <a class="button button--ghost button--active" href="index.html">projects and stack</a>
-                    <a class="button button--ghost" href="experience.html">experience</a>
-                    <a class="button button--ghost" href="education.html">education</a>
-                    <a class="button button--ghost" href="https://github.com/blavkice" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <h1 class="hero__title">root@blavkice:~#</h1>
+                <p class="hero__subtitle">student in computer science, passionate about cybersecurity</p>
+                <div class="hero__actions">
+                    <a class="button button--active" href="index.html">projects and stack</a>
+                    <a class="button" href="experience.html">experience</a>
+                    <a class="button" href="education.html">education</a>
+                    <a class="button" href="https://github.com/blavkice" target="_blank">GitHub</a>
                 </div>
+            </div>
+            <div class="hero__card">
+                a25vd2xlZGdlIGlzIGtleSEgbm90IHRoaXMgdGltZSBidHc=
             </div>
         </header>
 
         <main id="main-content">
-            <section class="section" aria-labelledby="projects-heading">
+            <section class="section">
                 <div class="section__header">
-                    <div>
-                        <h2 id="projects-heading" class="section__title">Projects</h2>
-                        <p class="section__desc">selected work and experiments</p>
-                    </div>
+                    <h2 class="section__title">Projects</h2>
+                    <p class="section__desc">selected work and experiments</p>
                 </div>
-                <div class="projects-grid" role="list">
-                    <article class="project-card" role="listitem">
+                <div class="projects-grid">
+                    <article class="project-card">
                         <div class="project-card__header">
-                            <h3 class="project-card__title">
-                                <a href="https://github.com/blavkice/SureSeat" target="_blank" rel="noopener noreferrer">
-                                    SureSeat
-                                </a>
-                            </h3>
+                            <h3 class="project-card__title"><a href="https://github.com/blavkice/SureSeat" target="_blank">SureSeat</a></h3>
                             <span class="project-card__lang">Python</span>
                         </div>
                         <p class="project-card__desc">Automated booking system for affluences - streamlining reservation processes through automation.</p>
-                        <a href="https://github.com/blavkice/SureSeat"
-                           class="project-card__link"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="View SureSeat source code on GitHub">
-                            View source
-                        </a>
+                        <a href="https://github.com/blavkice/SureSeat" class="project-card__link" target="_blank">View source</a>
                     </article>
-
-                    <article class="project-card" role="listitem">
+                    <article class="project-card">
                         <div class="project-card__header">
-                            <h3 class="project-card__title">
-                                <a href="https://github.com/blavkice/MediaManager" target="_blank" rel="noopener noreferrer">
-                                    MediaManager
-                                </a>
-                            </h3>
+                            <h3 class="project-card__title"><a href="https://github.com/blavkice/MediaManager" target="_blank">MediaManager</a></h3>
                             <span class="project-card__lang">C++</span>
                         </div>
-                        <p class="project-card__desc">Local media manager built with Qt framework - project for UniPD's Object-Oriented Programming course.</p>
-                        <a href="https://github.com/blavkice/MediaManager"
-                           class="project-card__link"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="View MediaManager source code on GitHub">
-                            View source
-                        </a>
+                        <p class="project-card__desc">Local media manager built with Qt framework - project for UniPD's OOP course.</p>
+                        <a href="https://github.com/blavkice/MediaManager" class="project-card__link" target="_blank">View source</a>
                     </article>
-
-                    <article class="project-card" role="listitem">
+                    <article class="project-card">
                         <div class="project-card__header">
-                            <h3 class="project-card__title">
-                                <a href="https://github.com/blavkice/integer-to-roman" target="_blank" rel="noopener noreferrer">
-                                    integer-to-roman
-                                </a>
-                            </h3>
+                            <h3 class="project-card__title"><a href="https://github.com/blavkice/integer-to-roman" target="_blank">integer-to-roman</a></h3>
                             <span class="project-card__lang">Java</span>
                         </div>
                         <p class="project-card__desc">Algorithm implementation for converting integers to Roman numerals.</p>
-                        <a href="https://github.com/blavkice/integer-to-roman"
-                           class="project-card__link"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="View integer-to-roman source code on GitHub">
-                            View source
-                        </a>
+                        <a href="https://github.com/blavkice/integer-to-roman" class="project-card__link" target="_blank">View source</a>
                     </article>
                 </div>
             </section>
 
-            <section class="section" aria-labelledby="stack-heading">
-                <div class="section__header">
-                    <div>
-                        <h2 id="stack-heading" class="section__title">Stack</h2>
-                        <p class="section__desc">languages, frameworks, and focus areas</p>
-                    </div>
-                </div>
-
-                <div class="stack-section">
+<div class="stack-section">
                     <h3 class="stack-section__title">Languages</h3>
                     <div class="stack-grid" role="list">
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">Python</span>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt=""></div>
+                            <span class="logo-card__label">HTML</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">C</span>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt=""></div>
+                            <span class="logo-card__label">CSS</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">C++</span>
-                        </div>
-                        <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">Java</span>
-                        </div>
-                        <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt=""></div>
                             <span class="logo-card__label">JavaScript</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt=""></div>
                             <span class="logo-card__label">TypeScript</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">HTML (not a language)</span>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt=""></div>
+                            <span class="logo-card__label">SQL</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">CSS (accessibility, ARIA-ready)</span>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt=""></div>
+                            <span class="logo-card__label">C</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">SQL (Postgres, MySQL)</span>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt=""></div>
+                            <span class="logo-card__label">C++</span>
+                        </div>
+                        <div class="logo-card" role="listitem">
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt=""></div>
+                            <span class="logo-card__label">Java</span>
+                        </div>
+                        <div class="logo-card" role="listitem">
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt=""></div>
+                            <span class="logo-card__label">Python</span>
                         </div>
                     </div>
                 </div>
@@ -186,89 +107,44 @@
                     <h3 class="stack-section__title">Frameworks</h3>
                     <div class="stack-grid" role="list">
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg" alt=""></div>
                             <span class="logo-card__label">Angular</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original.svg" alt=""></div>
                             <span class="logo-card__label">NestJS</span>
+                        </div>
+                        <div class="logo-card" role="listitem">
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/quarkus/quarkus-original.svg" alt=""></div>
+                            <span class="logo-card__label">Quarkus</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="stack-section">
-                    <h3 class="stack-section__title">Platforms</h3>
+                    <h3 class="stack-section__title">Platforms & Tools</h3>
                     <div class="stack-grid" role="list">
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">Unix (Linux, macOS)</span>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt=""></div>
+                            <span class="logo-card__label">Unix / Linux</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows8/windows8-original.svg" alt=""></div>
                             <span class="logo-card__label">Windows</span>
                         </div>
                         <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
+                            <div class="logo-card__icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt=""></div>
                             <span class="logo-card__label">Docker</span>
                         </div>
-                        <div class="logo-card" role="listitem">
-                            <div class="logo-card__icon">
-                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg" alt="" aria-hidden="true" loading="lazy">
-                            </div>
-                            <span class="logo-card__label">Azure</span>
-                        </div>
                     </div>
                 </div>
-
-                <div class="stack-section">
-                    <h3 class="stack-section__title">Focus</h3>
-                    <ul class="chip-list" aria-label="Focus areas">
-                        <li class="chip">Networking</li>
-                        <li class="chip">Security analysis</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section" aria-labelledby="contact-heading">
-                <div class="section__header">
-                    <div>
-                        <h2 id="contact-heading" class="section__title">Connect</h2>
-                        <p class="section__desc">say hi</p>
-                    </div>
-                </div>
-                <nav class="contact-links" aria-label="Social links">
-                    <a href="https://github.com/blavkice"
-                       class="contact-link"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="Visit GitHub profile">
-                        <svg class="contact-link__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                </nav>
             </section>
         </main>
 
-        <footer class="footer" role="contentinfo">
-            <p>&copy; <span id="current-year">2025</span> blavkice</p>
+        <footer class="footer">
+            <p>&copy; updated may 2026</p>
         </footer>
     </div>
-
     <script src="script.js"></script>
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>

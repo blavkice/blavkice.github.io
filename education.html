@@ -1,87 +1,54 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Education - blavkice portfolio.">
-    <meta name="theme-color" content="#0f1214">
     <title>education</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: 0;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-    </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
     <div class="page">
         <header class="hero hero--single">
             <div class="hero__content">
-                <p class="eyebrow reveal" style="--delay: 0ms">Education</p>
-                <h1 class="hero__title reveal" style="--delay: 80ms">Education</h1>
-                <p class="hero__subtitle reveal" style="--delay: 140ms">current studies and next steps</p>
-                <div class="hero__actions reveal" style="--delay: 200ms">
-                    <a class="button button--ghost" href="index.html">projects</a>
-                    <a class="button button--ghost" href="experience.html">experience</a>
-                    <a class="button button--ghost button--active" href="education.html">education</a>
-                    <a class="button button--ghost" href="https://github.com/blavkice" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <h1 class="hero__title">Education</h1>
+                <div class="hero__actions">
+                    <a class="button" href="index.html">projects and stack</a>
+                    <a class="button" href="experience.html">experience</a>
+                    <a class="button button--active" href="education.html">education</a>
+                    <a class="button" href="https://github.com/blavkice" target="_blank">GitHub</a>
                 </div>
             </div>
         </header>
-
-        <main id="main-content">
-            <section class="section education-list" aria-label="Education">
-                <div class="projects-grid" role="list">
-                    <article class="project-card project-card--profile" role="listitem">
+        <main>
+            <section class="section">
+                <div class="projects-grid">
+                    <article class="project-card">
                         <div class="project-card__header">
-                            <div class="project-card__text">
-                                <h3 class="project-card__title">University of Padua (UniPD) - Current</h3>
-                                <p class="project-card__role">BSc Computer Science</p>
+                            <div>
+                                <h3 class="project-card__title">University of Padua</h3>
+                                <p class="project-card__desc">BSc Computer Science</p>
                             </div>
-                            <div class="badge badge--unipd" aria-hidden="true">UP</div>
+                            <div class="badge">UP</div>
                         </div>
-                        <p class="project-card__desc">2023-2026</p>
+                        <p class="project-card__desc">2023 - 2026</p>
                     </article>
-                </div>
-                <div class="projects-grid" role="list">
-                    <article class="project-card project-card--profile" role="listitem">
+                    <article class="project-card">
                         <div class="project-card__header">
-                            <div class="project-card__text">
-                                <h3 class="project-card__title">?</h3>
-                                <p class="project-card__role">MSc Cybersecurity</p>
+                            <div>
+                                <h3 class="project-card__title">MSc Cybersecurity</h3>
+                                <p class="project-card__desc">Planned</p>
                             </div>
-                            <div class="badge badge--unipd" aria-hidden="true">AA</div>
+                            <div class="badge">AA</div>
                         </div>
-                        <p class="project-card__desc">planned</p>
                     </article>
                 </div>
             </section>
         </main>
-
-        <footer class="footer" role="contentinfo">
-            <p>&copy; <span id="current-year">2025</span> blavkice</p>
+        <footer class="footer">
+            <p>&copy; updated may 2026</p>
         </footer>
     </div>
-
-    <script src="script.js"></script>
-    <script>
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
