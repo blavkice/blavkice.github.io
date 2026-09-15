@@ -61,6 +61,7 @@ a:hover, a:focus { color: var(--accent-dark); }
 }
 
 .hero--single { padding-bottom: 0; }
+.hero--single .hero__title { margin-bottom: 32px; }
 .hero__content { display: block; }
 
 .hero__title {
@@ -73,17 +74,7 @@ a:hover, a:focus { color: var(--accent-dark); }
     line-height: .88;
 }
 
-.hero__title::before {
-    content: 'portfolio /';
-    display: block;
-    margin: 0 0 19px 5px;
-    color: var(--accent-dark);
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: .12em;
-    line-height: 1;
-    text-transform: uppercase;
-}
+.hero__title::before { content: none; }
 
 .hero__title::after { content: none; }
 
