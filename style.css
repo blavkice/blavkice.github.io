@@ -188,16 +188,8 @@ a:hover, a:focus { color: var(--accent-dark); }
 .project-card__title a { text-decoration: none; }
 .project-card__title a:hover { color: var(--accent-dark); }
 
-.project-card__lang {
-    flex-shrink: 0;
-    padding: 4px 8px;
-    border: 1px solid #e8c2b5;
-    border-radius: 999px;
-    background: var(--accent-soft);
-    color: var(--accent-dark);
-    font-family: var(--mono);
-    font-size: 10px;
-}
+.project-card__langs { display: flex; flex-shrink: 0; gap: 8px; padding-top: 2px; }
+.project-card__langs img { width: 20px; height: 20px; object-fit: contain; }
 
 .project-card__desc { margin: 0 0 16px; color: var(--muted); font-size: 14px; }
 .project-card__link { margin-top: auto; color: var(--accent-dark); font-size: 12px; text-decoration: none; }
